@@ -33,12 +33,12 @@ def assemble_changes(orig: dict[str, Optional[str]], dest: dict[str, Optional[st
                     old_content=old_content,
                     new_content=new_content,
                 )
-            elif new_content:
+            elif new_content is not None:
                 commit.changes[path] = FileChange(
                     type=ActionType.ADD,
                     new_content=new_content,
                 )
-            elif old_content:
+            elif old_content is not None:
                 commit.changes[path] = FileChange(
                     type=ActionType.DELETE,
                     old_content=old_content,
