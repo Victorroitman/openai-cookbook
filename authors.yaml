@@ -523,3 +523,7 @@ charlie-openai:
   website: "https://wee.ms"
   avatar: "https://avatars.githubusercontent.com/u/181146176?v=4"
 
+assistant-bot:
+  name: "GPT-5.1-Codex-Max"
+  website: "https://openai.com/"
+  avatar: "https://openai.com/content/images/2022/05/openai-avatar.png"
